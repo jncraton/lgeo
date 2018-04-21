@@ -1,0 +1,76 @@
+; LGEO Colors List
+;
+; For use with Lars C. Hassings L3P version x.xx and up
+;
+; Color Name Flags (S=Solid, T=Transparent, C=Chrome, P=Pearl, M=Metallic, R=Rubber, G=Glitter)
+
+0	lg_black	S
+1	lg_blue	S
+2	lg_green	S
+3	lg_cyan	S
+4	lg_red	S
+5	lg_dark_pink	S
+6	lg_brown	S
+7	lg_grey	S
+8	lg_dark_grey	S
+9	lg_light_blue	S
+10	lg_bright_green	S
+11	lg_turquoise	S
+12	lg_salmon	S
+13	lg_pink	S
+14	lg_yellow	S
+15	lg_white	S
+17	lg_light_green	S
+18	lg_light_yellow	S
+19	lg_tan	S
+20	lg_light_violet	S
+22	lg_purple	S
+23	lg_violet_blue	S
+25	lg_orange	S
+26	lg_magenta	S
+27	lg_lime	S
+28	lg_dark_tan	S
+29	lg_light_purple	S
+33	lg_clear_blue	T
+34	lg_clear_green	T
+36	lg_clear_red	T
+37	lg_clear_violet	T
+40	lg_clear_brown	T
+41	lg_clear_cyan	T
+42	lg_clear_neon_yellow	T
+45	lg_clear_pink	T
+46	lg_clear_yellow	T
+47	lg_clear	T
+57	lg_clear_neon_orange	T
+69	lg_bright_purple	S
+70	lg_reddish_brown	S
+71	lg_bluish_grey	S
+72	lg_dark_bluish_grey	S
+73	lg_medium_blue	S
+74	lg_medium_green	S
+77	lg_paradisa_pink	S
+78	lg_light_flesh	S
+85	lg_medium_violet	S
+86	lg_dark_flesh	S
+89	lg_royal_blue	S
+92	lg_flesh	S
+134	lg_pearl_copper	SP
+135	lg_pearl_grey	SP
+137	lg_pearl_blue	SP
+142	lg_pearl_gold	SP
+272	lg_dark_blue	S
+288	lg_dark_green	S
+313	lg_maersk_blue	S
+320	lg_dark_red	S
+335	lg_sand_red	S
+366	lg_earth_orange	S
+373	lg_sand_purple	S
+378	lg_sand_green	S
+379	lg_sand_blue	S
+383	lg_chrome	SC
+334	lg_gold_chrome	SC
+462	lg_light_orange	S
+484	lg_dark_orange	S
+503	lg_very_light_grey	S
+998	lg_medium_orange	S
+999	lg_undefined	S

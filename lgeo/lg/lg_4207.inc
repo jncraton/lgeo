@@ -1,0 +1,663 @@
+/*******************************************************************************/
+/*                                                                             */
+/* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
+/*                                                                             */
+/* 19990922 Lutz Uhlmann                                                       */
+/* 20080112 Lutz Uhlmann fixed side rails                                      */
+/*                                                                             */
+/* This file is in no way related to the LEGO(tm) Group.                       */
+/* It is provided for private non-commercial use only.                         */
+/*                                                                             */
+/* lg_4207: Ladder 2.5 x 14                                                    */
+/*                                                                             */
+/*******************************************************************************/
+#ifdef(lg_4207)
+#else
+#declare LADH=(13+1/3)*0.04/5;
+#declare lg_4207 =
+union {
+ #declare MIR = 0;
+ #while (MIR < 2)
+  union {
+   #declare MIR2 = 0;
+   #while (MIR2 < 2)
+    union {
+     sphere {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, LADH-LG_CORNER_SPACE>,
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 3*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 2*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 5*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 4*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 5*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 2*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 3*LADH-LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, LG_CORNER_SPACE>
+     }
+     #if (MIR2 = 1)
+      matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+     #end
+    }
+    #declare MIR2 = MIR2 + 1;
+   #end
+   cylinder {
+    <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    <0.92-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    <0.92-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    <1.02-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <1.02-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   box {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 0>
+   }
+   box {
+    <0.92-LG_CORNER_SPACE-LG_E, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    <0.92, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>
+   }
+   box {
+    <0.82, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    <0.72, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>
+   }
+   box {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LADH>
+   }
+   box {
+    <0.92, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    <1.02, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>
+   }
+   box {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH>
+   }
+   box {
+    <0.82+LG_CORNER_SPACE+LG_E, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <0.82, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>
+   }
+   #if (MIR = 1)
+    matrix <-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ #declare RIB = -6;
+ #while (RIB < 7)
+  union {
+   cylinder {
+    <0.72+LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    <-0.72-LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   difference {
+    union {
+     cylinder {
+      <0.72+LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH, 0.2-LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2>
+     }
+    }
+    union {
+     #if (RIB = 4 | RIB = 2 | RIB = 0 | RIB = -2 | RIB = -4)
+      cylinder {
+       <0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.05
+      }
+      cylinder {
+       <-0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <-0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.05
+      }
+      box {
+       <0.2, -LG_WALL_WIDTH-LG_E, -LG_E>,
+       <-0.2, LG_WALL_WIDTH+LG_E, 0.05>
+      }
+     #else
+      cylinder {
+       <0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.04
+      }
+      cylinder {
+       <-0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <-0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.04
+      }
+      box {
+       <0.2, -LG_WALL_WIDTH-LG_E, -LG_E>,
+       <-0.2, LG_WALL_WIDTH+LG_E, 0.04>
+      }
+      sphere {
+       <0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+      sphere {
+       <-0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+      cylinder {
+       <-0.1, 0, -3*LADH+0.3>,
+       <0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+     #end
+    }
+   }
+   translate <0, RIB*LG_BRICK_WIDTH, 0>
+  }
+  #declare RIB = RIB + 1;
+ #end
+ #declare MIR = 0;
+ #while (MIR < 2)
+  union {
+   sphere {
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   sphere {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   cylinder {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   cylinder {
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <0.1, 6*LG_BRICK_WIDTH, 0.2-LG_E>,
+    0.08
+   }
+   cylinder {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <-0.1, 6*LG_BRICK_WIDTH, 0.2-LG_E>,
+    0.08
+   }
+   box {
+    <0.1, 6*LG_BRICK_WIDTH-0.08, 0.3>,
+    <-0.1, 6*LG_BRICK_WIDTH+0.08, 0.2-LG_E>
+   }
+   #if (MIR = 1)
+    matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+}
+
+#declare lg_4207_clear =
+merge {
+ #declare MIR = 0;
+ #while (MIR < 2)
+  merge {
+   #declare MIR2 = 0;
+   #while (MIR2 < 2)
+    merge {
+     sphere {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     sphere {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, LADH-LG_CORNER_SPACE>,
+      <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 3*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 2*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 5*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 4*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.92+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 5*LADH-LG_CORNER_SPACE>,
+      <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, 2*LADH+LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE-LG_E, 3*LADH-LG_CORNER_SPACE>,
+      <0.82-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH, LG_CORNER_SPACE>
+     }
+     #if (MIR2 = 1)
+      matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+     #end
+    }
+    #declare MIR2 = MIR2 + 1;
+   #end
+   cylinder {
+    <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    <0.92-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    <0.92-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    <1.02-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.72+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.82+LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <1.02-LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   box {
+    <0.92-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 0>
+   }
+   box {
+    <0.92-LG_CORNER_SPACE-LG_E, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, LADH-LG_CORNER_SPACE>,
+    <0.92, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>
+   }
+   box {
+    <0.82, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH-LG_CORNER_SPACE>,
+    <0.72, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>
+   }
+   box {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 3*LADH>,
+    <0.72+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 2*LADH>
+   }
+   box {
+    <0.92, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 2*LADH+LG_CORNER_SPACE>,
+    <1.02, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>
+   }
+   box {
+    <1.02-LG_CORNER_SPACE, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH>,
+    <0.82+LG_CORNER_SPACE, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH>
+   }
+   box {
+    <0.82+LG_CORNER_SPACE+LG_E, 7*LG_BRICK_WIDTH-LG_CORNER_SPACE, 5*LADH-LG_CORNER_SPACE>,
+    <0.82, -7*LG_BRICK_WIDTH+LG_CORNER_SPACE, 4*LADH+LG_CORNER_SPACE>
+   }
+   #if (MIR = 1)
+    matrix <-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ #declare RIB = -6;
+ #while (RIB < 7)
+  merge {
+   cylinder {
+    <0.72+LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    <-0.72-LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0.2-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   difference {
+    merge {
+     cylinder {
+      <0.72+LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     cylinder {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, LG_CORNER_SPACE>,
+      LG_CORNER_SPACE
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH, LG_CORNER_SPACE>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH, 0.2-LG_CORNER_SPACE>
+     }
+     box {
+      <0.72+LG_CORNER_SPACE, -LG_WALL_WIDTH+LG_CORNER_SPACE, 0>,
+      <-0.72-LG_CORNER_SPACE, LG_WALL_WIDTH-LG_CORNER_SPACE, 0.2>
+     }
+    }
+    union {
+     #if (RIB = 4 | RIB = 2 | RIB = 0 | RIB = -2 | RIB = -4)
+      cylinder {
+       <0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.05
+      }
+      cylinder {
+       <-0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <-0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.05
+      }
+      box {
+       <0.2, -LG_WALL_WIDTH-LG_E, -LG_E>,
+       <-0.2, LG_WALL_WIDTH+LG_E, 0.05>
+      }
+     #else
+      cylinder {
+       <0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.04
+      }
+      cylinder {
+       <-0.2, LG_WALL_WIDTH+LG_E, 0>,
+       <-0.2, -LG_WALL_WIDTH-LG_E, 0>,
+       0.04
+      }
+      box {
+       <0.2, -LG_WALL_WIDTH-LG_E, -LG_E>,
+       <-0.2, LG_WALL_WIDTH+LG_E, 0.04>
+      }
+      sphere {
+       <0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+      sphere {
+       <-0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+      cylinder {
+       <-0.1, 0, -3*LADH+0.3>,
+       <0.1, 0, -3*LADH+0.3>,
+       0.08
+      }
+     #end
+    }
+   }
+   translate <0, RIB*LG_BRICK_WIDTH, 0>
+  }
+  #declare RIB = RIB + 1;
+ #end
+ #declare MIR = 0;
+ #while (MIR < 2)
+  merge {
+   sphere {
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   sphere {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   cylinder {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    0.08
+   }
+   cylinder {
+    <0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <0.1, 6*LG_BRICK_WIDTH, 0.2-LG_E>,
+    0.08
+   }
+   cylinder {
+    <-0.1, 6*LG_BRICK_WIDTH, 0.3>,
+    <-0.1, 6*LG_BRICK_WIDTH, 0.2-LG_E>,
+    0.08
+   }
+   box {
+    <0.1, 6*LG_BRICK_WIDTH-0.08, 0.3>,
+    <-0.1, 6*LG_BRICK_WIDTH+0.08, 0.2-LG_E>
+   }
+   #if (MIR = 1)
+    matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+}
+
+#end

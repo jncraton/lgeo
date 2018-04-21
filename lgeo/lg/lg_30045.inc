@@ -1,0 +1,390 @@
+/*******************************************************************************/
+/*                                                                             */
+/* LGEO Libray Include File     (C) lgeo@digitalbricks.org (Lutz Uhlmann)      */
+/*                                                                             */
+/* 20080210 Lutz Uhlmann                                                       */
+/*                                                                             */
+/* This file is in no way related to the LEGO(tm) Group.                       */
+/* It is provided for private non-commercial use only.                         */
+/*                                                                             */
+/* lg_30045: Window 1 x 2 x 3 Pane Twisted Bar                                 */
+/*                                                                             */
+/*******************************************************************************/
+#ifdef(lg_30045)
+#else
+#declare lg_30045 =
+union {
+ #declare MIR = 0;
+ #while (MIR < 2)
+  union {
+   sphere {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   sphere {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   box {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH, -2.5*LG_PLATE_HEIGHT>
+   }
+   box {
+    <LG_WALL_WIDTH/2, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>
+   }
+   sphere {
+    <0, 0, 0>,
+    0.08
+    scale <1, 0.2, 1>
+    translate <0, 0.8*LG_BRICK_WIDTH, -3*LG_PLATE_HEIGHT>
+   }
+   #if (MIR = 1)
+    matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ #declare MIR = 0;
+ #while (MIR < 2)
+  union {
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, -0.675*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   difference {
+    union {
+     torus {
+      0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+      LG_CORNER_SPACE
+      rotate <0, 0, 90>
+      translate <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>
+     }
+     torus {
+      0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE,
+      LG_CORNER_SPACE
+      rotate <0, 0, 90>
+      translate <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>
+     }
+    }
+    box {
+     <LG_BRICK_WIDTH/2+LG_E, LG_BRICK_WIDTH+LG_E, -LG_BRICK_WIDTH>,
+     <-LG_BRICK_WIDTH/2-LG_E, -LG_BRICK_WIDTH-LG_E, -2*LG_BRICK_WIDTH-LG_E>
+    }
+   }
+   #if (MIR = 1)
+    matrix <-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ difference {
+  union {
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.8*LG_BRICK_WIDTH
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE
+   }
+  }
+  union {
+   cylinder {
+    <LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2+LG_E, 0, -LG_BRICK_WIDTH>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2-LG_E, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE
+   }
+   box {
+    <LG_WALL_WIDTH/2+LG_E, LG_BRICK_WIDTH+LG_E, -LG_BRICK_WIDTH-LG_E>,
+    <-LG_WALL_WIDTH/2-LG_E, -LG_BRICK_WIDTH-LG_E, -2*LG_BRICK_WIDTH-LG_E>
+   }
+   box {
+    <LG_WALL_WIDTH/2+LG_E,0.8* LG_BRICK_WIDTH-LG_CORNER_SPACE, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2-LG_E, -LG_BRICK_WIDTH+LG_CORNER_SPACE, -2*LG_BRICK_WIDTH-LG_E>
+   }
+  }
+ }
+ box {
+  <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1>,
+  <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT>
+ }
+ box {
+  <LG_WALL_WIDTH/2, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+  <-LG_WALL_WIDTH/2, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, 0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, -0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, 0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, -0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>
+ }
+ translate <0, 0, LG_BRICK_HEIGHT>
+}
+
+#declare lg_30045_clear =
+merge {
+ #declare MIR = 0;
+ #while (MIR < 2)
+  merge {
+   sphere {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   sphere {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>,
+    LG_CORNER_SPACE
+   }
+   box {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH, -2.5*LG_PLATE_HEIGHT>
+   }
+   box {
+    <LG_WALL_WIDTH/2, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <-LG_WALL_WIDTH/2, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -2.5*LG_PLATE_HEIGHT>
+   }
+   sphere {
+    <0, 0, 0>,
+    0.08
+    scale <1, 0.2, 1>
+    translate <0, 0.8*LG_BRICK_WIDTH, -3*LG_PLATE_HEIGHT>
+   }
+   #if (MIR = 1)
+    matrix <1, 0, 0, 0, -1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ #declare MIR = 0;
+ #while (MIR < 2)
+  merge {
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, -0.675*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+    LG_CORNER_SPACE
+   }
+   difference {
+    merge {
+     torus {
+      0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE,
+      LG_CORNER_SPACE
+      rotate <0, 0, 90>
+      translate <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>
+     }
+     torus {
+      0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE,
+      LG_CORNER_SPACE
+      rotate <0, 0, 90>
+      translate <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>
+     }
+    }
+    box {
+     <LG_BRICK_WIDTH/2+LG_E, LG_BRICK_WIDTH+LG_E, -LG_BRICK_WIDTH>,
+     <-LG_BRICK_WIDTH/2-LG_E, -LG_BRICK_WIDTH-LG_E, -2*LG_BRICK_WIDTH-LG_E>
+    }
+   }
+   #if (MIR = 1)
+    matrix <-1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0>
+   #end
+  }
+  #declare MIR = MIR + 1;
+ #end
+ difference {
+  merge {
+   cylinder {
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.8*LG_BRICK_WIDTH
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE
+   }
+  }
+  union {
+   cylinder {
+    <LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH
+   }
+   cylinder {
+    <LG_WALL_WIDTH/2+LG_E, 0, -LG_BRICK_WIDTH>,
+    <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE
+   }
+   cylinder {
+    <-LG_WALL_WIDTH/2-LG_E, 0, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, 0, -LG_BRICK_WIDTH>,
+    0.675*LG_BRICK_WIDTH+LG_CORNER_SPACE
+   }
+   box {
+    <LG_WALL_WIDTH/2+LG_E, LG_BRICK_WIDTH+LG_E, -LG_BRICK_WIDTH-LG_E>,
+    <-LG_WALL_WIDTH/2-LG_E, -LG_BRICK_WIDTH-LG_E, -2*LG_BRICK_WIDTH-LG_E>
+   }
+   box {
+    <LG_WALL_WIDTH/2+LG_E,0.8* LG_BRICK_WIDTH-LG_CORNER_SPACE, -LG_BRICK_WIDTH>,
+    <-LG_WALL_WIDTH/2-LG_E, -LG_BRICK_WIDTH+LG_CORNER_SPACE, -2*LG_BRICK_WIDTH-LG_E>
+   }
+  }
+ }
+ box {
+  <LG_WALL_WIDTH/2-LG_CORNER_SPACE, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1>,
+  <-LG_WALL_WIDTH/2+LG_CORNER_SPACE, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT>
+ }
+ box {
+  <LG_WALL_WIDTH/2, 0.8*LG_BRICK_WIDTH-LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+  <-LG_WALL_WIDTH/2, -0.8*LG_BRICK_WIDTH+LG_CORNER_SPACE, -7*LG_PLATE_HEIGHT+LG_CORNER_SPACE>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, 0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, -0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, 0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>
+ }
+ torus {
+  0.15,
+  0.05
+  rotate <45, 0, 0>
+  scale <0.4, 1, 1>
+  translate <0, -0.3*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>
+ }
+ translate <0, 0, LG_BRICK_HEIGHT>
+}
+
+#declare lg_30045_slope =
+union {
+ cylinder {
+  <0, 0.3*LG_BRICK_WIDTH, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+  <0, 0.3*LG_BRICK_WIDTH, -0.25>,
+  0.07
+ }
+ cylinder {
+  <0, -0.3*LG_BRICK_WIDTH, -7*LG_PLATE_HEIGHT+0.1-LG_CORNER_SPACE>,
+  <0, -0.3*LG_BRICK_WIDTH, -0.25>,
+  0.07
+ }
+ cylinder {
+  <0, -0.75*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>,
+  <0, 0.75*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT+0.08>,
+  0.07
+ }
+ cylinder {
+  <0, -0.75*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>,
+  <0, 0.75*LG_BRICK_WIDTH, -LG_BRICK_HEIGHT-0.72>,
+  0.07
+ }
+ translate <0, 0, LG_BRICK_HEIGHT>
+}
+
+#end
