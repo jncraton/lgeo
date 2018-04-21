@@ -10,11 +10,11 @@ http://www.digitalbricks.org
 
 ## 1.1. Disclaimer
 
-The LGEO library is a fan created collection of definitions for LEGO Geometrical Equivalent
+The LGEO library is a fan created collection of definitions for LEGO™ Geometrical Equivalent
 Objects (called parts from here on) to be used with POV-Ray. It is no way related or sponsored by
-the LEGO Group and free of charge. It may be redistributed freely while copyright of the
+the LEGO™ Group and free of charge. It may be redistributed freely while copyright of the
 intellectual property remains with the author. The LEGO logo displayed on the studs is under
-copyright of the LEGO Group.
+copyright of the LEGO™ Group.
 
 ## 1.2. History
 
@@ -154,7 +154,7 @@ for this, and it works. My advice would be not to use precolored parts.
 # 4. Notes
 
 Recent development of LGEO library was done on an Intel-based Mac Mini running Mac
-OS X 10.4.10/11, using MegaPOV 1.2.1 for rendering. MegaPOV 1.2.1 is based on POV-Ray 3.6.
+OS X™ 10.4.10/11, using MegaPOV 1.2.1 for rendering. MegaPOV 1.2.1 is based on POV-Ray 3.6.
 There is still no official Intel-compiled version of POV-Ray for Mac OS X, so I used this version.
 Basically, LGEO should work with any POV-Ray from 3.1 up.
 
