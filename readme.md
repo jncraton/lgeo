@@ -86,11 +86,11 @@ LDRAW, so it may be pretty hard to build a model by placing the parts by hand. I
 historic reasons Y axis is the depth axis, and Z is the up axis, where also Z has switched sign to
 LDRAW Y axis. Sorry for that, but my understanding of coordinate to this time was a flat standard
 XY coordinate system with a third Z axis coming out of the plane. Scaling is to real measurements,
-where 1 POV-Ray unit is 10mm. So 0.8 is 20 LDU (width of a LEGO brick) and 0.96 is 24 LDU
-(height of a LEGO brick).
+where 1 POV-Ray unit is 10mm. So 0.8 is 20 LDU (width of a LEGO™ brick) and 0.96 is 24 LDU
+(height of a LEGO™ brick).
 If you want to try, go ahead. But you should be familar with POV-Ray to have some success. LGEO
 is clearly meant to work best with L3P, which is available for Linux,
-Windows and Mac OS X.
+Windows™ and Mac OS X™.
 
 ## 2.4. Usage with L3P
 
