@@ -1,10 +1,9 @@
 LGEO Libray for POV-Ray
 =======================
 
-```
 Lutz Uhlmann
+
 http://www.digitalbricks.org
-```
 
 # 1. Information
 
@@ -24,7 +23,6 @@ program to convert the models, based on binary files _lg_color.tab_ and _lg_elmn
 point in 2000 irregular updates were published. Lars C. Hassing created the L3P program, which
 not only performs the tasks of l2p but also is able to create POV-Ray code for parts not in the
 LGEO library. As it was still depending on the _tab_ files, it was stuck to the LGEO parts created until
-
 2000. In 2007, Lars and I came up to communicate frequently for new versions of L3P and LGEO
 with better support for each other. The l2p program is officially out of support, as I will focus on
 creating the LGEO parts. The _tab_ files were replaced by the better readable _lst_ files. Additionally, I
@@ -157,5 +155,3 @@ Recent development of LGEO library was done on an Intel-based Mac Mini running M
 OS X™ 10.4.10/11, using MegaPOV 1.2.1 for rendering. MegaPOV 1.2.1 is based on POV-Ray 3.6.
 There is still no official Intel-compiled version of POV-Ray for Mac OS X, so I used this version.
 Basically, LGEO should work with any POV-Ray from 3.1 up.
-
-
