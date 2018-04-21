@@ -1,0 +1,6 @@
+(c) 1997 - 2018 Lutz Uhlmann
+
+The LGEO library is a fan created collection of definitions for LEGO Geometrical Equivalent Objects (called parts from here on) to be used with POV-Ray. It is no way related or sponsored by
+the LEGO Group and free of charge. It may be redistributed freely while copyright of the
+intellectual property remains with the author. The LEGO logo displayed on the studs is under
+copyright of the LEGO Group.
